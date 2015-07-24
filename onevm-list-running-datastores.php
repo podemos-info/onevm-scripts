@@ -17,7 +17,7 @@ foreach ($lines as $line){
 
 	if($partes[0]>=1){
 
-	echo "VM ID: ".$partes[0]." - DATASTORE_NAME: ";
+	echo "VM ID: ".$partes[0]." | NAME: ".$partes[3]." | DATASTORE_NAME: ";
 
 	$datastore = exec("onevm show ".$partes[0]." --xml |grep DATASTORE\>" );
 
